@@ -11,8 +11,8 @@
   <body>
     <div class="quote-section">
       <div class="quote-section-text">
-        <h1 id="quote">Quote</h1>
-        <h5 id="quote-author">Quote Attribution</h5>
+        <h1 id="quote"></h1>
+        <h5 id="quote-author"></h5>
       </div>
     </div>
     <div class="weather-container">
@@ -45,32 +45,29 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/getQuote.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
-
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
-  <style>
-    #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-    #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-    html>body #sortable li { height: 1.5em; line-height: 1.2em; }
-    .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
-    </style>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <style>
+      #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+      #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+      html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+      .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+      </style>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-    $( function() {
-      $( "#toDoList" ).sortable({
-        placeholder: "ui-state-highlight"
-      });
-      $( "#toDoList-list" ).disableSelection();
-    } );
-    </script>
-
+      $( function() {
+        $( "#toDoList" ).sortable({
+          placeholder: "ui-state-highlight"
+        });
+        $( "#toDoList-list" ).disableSelection();
+      } );
+      </script>
 <script src="assets/js/getQuote.js"></script>
+<script src="assets/js/script.js"></script>
 
 
-
+</body>
 </html>
