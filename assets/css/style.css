@@ -5,10 +5,17 @@
 body {
   background-color: #e4d8cf;
 }
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
 .quote-section {
   background-color: #e4bab4;
   background-size: cover;
   height: 40vh;
+  width: 175vh;
   border: 5px solid #424340;
   border-radius: 15px;
   text-align: center;
@@ -41,7 +48,7 @@ body {
   border: 5px solid #424340;
   margin-top: 100px;
   margin-bottom: 5px;
-  width: 50vh;
+  width: 100vh;
   height: 15vh;
   text-align: center;
   display: -webkit-flex;
@@ -60,12 +67,19 @@ body {
   /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
+.todo-container {
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+}
+
 .todo-content {
   background-color: #e4bab4;
   background-size: cover;
   border: 5px solid #424340;
   border-radius: 15px;
-  height: 100vh;
+  height: 75vh;
+  width: 100%;
   text-align: center;
   margin-top: 200px;
   display: -webkit-flex;
