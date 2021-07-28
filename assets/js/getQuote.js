@@ -10,6 +10,8 @@ function getQuote() {
       var randomArr = Math.floor(Math.random() * data.length);
       quote.text(`"${data[randomArr].text}"`);
       quotesAuthor.text(`"${data[randomArr].author}"`);
+      console.log(data);
+      console.log(randomArr);
     });
 }
 
