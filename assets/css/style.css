@@ -2,7 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero-section {
+.quote-section {
   background-color: rgb(82, 22, 122);
   background-size: cover;
   height: 40vh;
@@ -18,18 +18,18 @@
   justify-content: center;
 }
 
-.hero-section .hero-section-text {
+.quote-section .quote-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
-.quote-container {
+.weather-container {
   display: flex;
-  height: 10vh;
+  height: 15vh;
   justify-content: center;
 }
 
-.quote-section {
+.weather-section {
   background-color: rgb(82, 22, 122);
   background-size: cover;
   border-radius: 15px;
@@ -37,7 +37,7 @@
   margin-top: 100px;
   margin-bottom: 5px;
   width: 50vh;
-  height: 10vh;
+  height: 15vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,7 +50,7 @@
   justify-content: center;
 }
 
-.quote-section .quote-section-text {
+.weather-section .weather-section-text {
   color: #fefefe;
   text-shadow: 1px 1px 2px #0a0a0a;
 }
