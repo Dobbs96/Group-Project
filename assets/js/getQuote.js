@@ -9,9 +9,13 @@ function getQuote() {
     .then(function (data) {
       var randomArr = Math.floor(Math.random() * data.length);
       quote.text(`"${data[randomArr].text}"`);
-      quotesAuthor.text(`"${data[randomArr].author}"`);
-      console.log(data);
-      console.log(randomArr);
+      if (data[randomArr].author === null) {
+        quotesAuthor.text("");
+      } else {
+        quotesAuthor.text(`"${data[randomArr].author}"`);
+        console.log(data);
+        console.log(randomArr);
+      }
     });
 }
 

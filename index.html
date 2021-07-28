@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Best of Me</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
@@ -25,7 +26,17 @@
     </div>
 
     <div class="todo-container">
-      <div class="todo-content"></div>
+      <div class="todo-content">
+        <div class="todoContentText">
+          <label for="toDo" class="toDoInput">To Do List:
+          </label>
+          <div class="inputText">
+            <input type="text" class="inputTextList" id="list" />
+          </div>
+        </br>
+            <div class="list-group" id="toDoList"></div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -37,4 +48,29 @@
     <script src="assets/js/getQuote.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <style>
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+    #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+    html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+    .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#toDoList" ).sortable({
+        placeholder: "ui-state-highlight"
+      });
+      $( "#toDoList-list" ).disableSelection();
+    } );
+    </script>
+
+<script src="assets/js/getQuote.js"></script>
+
+
+
 </html>
