@@ -2,11 +2,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #e4d8cf;
+}
 .quote-section {
   background-color: #e4bab4;
   background-size: cover;
   height: 40vh;
   border: 5px solid #424340;
+  border-radius: 15px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,8 +24,8 @@
 }
 
 .quote-section .quote-section-text {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
+  color: #424340;
+  /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
 .weather-container {
@@ -53,13 +57,14 @@
 
 .weather-section .weather-section-text {
   color: #424340;
-  text-shadow: 1px 1px 2px #0a0a0a;
+  /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
 .todo-content {
   background-color: #e4bab4;
   background-size: cover;
   border: 5px solid #424340;
+  border-radius: 15px;
   height: 100vh;
   text-align: center;
   margin-top: 200px;
