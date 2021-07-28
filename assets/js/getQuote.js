@@ -9,8 +9,10 @@ function getQuote() {
     })
     .then(function (data) {
       console.log(data);
-      quote.text(`"${data[0].text}"`);
-      quotesAuthor.text(`"${data[0].author}"`);
+      quote.text(`"${data[Math.floor(Math.random() * data.length)].text}"`);
+      quotesAuthor.text(
+        `"${data[Math.floor(Math.random() * data.length)].author}"`
+      );
     });
 }
 
