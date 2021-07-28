@@ -19,7 +19,7 @@ We have a team of developers who are bringing together their unique strengths to
 
 # Project Requirements
 
-You and your group will use everything you’ve learned over the past six units to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+Our group will use everything we’ve learned over the past six units to create a real-world front-end application that we’ll be able to showcase to potential employers. We will fulfil the following requirements:
 
 * Use a CSS framework other than Bootstrap.
 * Be deployed to GitHub Pages.
