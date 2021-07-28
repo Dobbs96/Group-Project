@@ -3,9 +3,10 @@
 }
 
 .quote-section {
-  background-color: rgb(82, 22, 122);
+  background-color: #e4bab4;
   background-size: cover;
   height: 40vh;
+  border: 5px solid #424340;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,10 +31,10 @@
 }
 
 .weather-section {
-  background-color: rgb(82, 22, 122);
+  background-color: #e4bab4;
   background-size: cover;
   border-radius: 15px;
-  border: 5px solid black;
+  border: 5px solid #424340;
   margin-top: 100px;
   margin-bottom: 5px;
   width: 50vh;
@@ -51,14 +52,14 @@
 }
 
 .weather-section .weather-section-text {
-  color: #fefefe;
+  color: #424340;
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
 .todo-content {
-  background-color: rgb(82, 22, 122);
+  background-color: #e4bab4;
   background-size: cover;
-  border: 5px solid black;
+  border: 5px solid #424340;
   height: 100vh;
   text-align: center;
   margin-top: 200px;
