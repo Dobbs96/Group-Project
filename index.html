@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Best of Me</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="htt/resources/demos/style.css"> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
@@ -29,14 +30,20 @@
     <div class="todo-container">
       <div class="todo-content">
         <div class="todoContentText">
-          <label for="toDo" class="toDoInput">To Do List:
-          </label>
-          <div class="inputText">
-            <input type="text" class="inputTextList" id="list" />
+          <form id="skills-form">
+            <div class="form-group row">
+              <label for="list" class="listItems">To Do List:
+              </label>
+                <input type="text" class="form-list" id="toDo">
+              </div>
+            </div>
+            <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button>
+          </form>
+          <div>
+          <h4>List:</h4>
           </div>
-        </br>
-            <div class="list-group" id="toDoList"></div>
-        </div>
+          <ul class="list-items" id="toDoList"></ul>
+        <div>
       </div>
     </div>
 
@@ -45,28 +52,29 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    
-    <style>
-      #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-      #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-      html>body #sortable li { height: 1.5em; line-height: 1.2em; }
-      .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
-      </style>
+  
+  
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <style>
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+    #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+    #sortable li span { position: absolute; margin-left: -1.3em; }
+    </style>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-      $( function() {
-        $( "#toDoList" ).sortable({
-          placeholder: "ui-state-highlight"
-        });
-        $( "#toDoList-list" ).disableSelection();
-      } );
-      </script>
+    $( function() {
+      $( "#toDoList").sortable();
+      $( "#toDoList").disableSelection();
+    } );
+    </script>
+<script src="./assets/js/toDo.js"></script>
 <script src="assets/js/getQuote.js"></script>
 <script src="assets/js/script.js"></script>
 
-
 </body>
+
 </html>
