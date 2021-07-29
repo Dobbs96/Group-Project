@@ -25,14 +25,14 @@ body {
   height: 40vh;
 }
 .quote-section {
-  background-image: url("./lake-6476212.jpg");
-  /* background: rgb(139, 140, 96);
+  /* background-image: url("./lake-6476212.jpg"); */
+  background: rgb(139, 140, 96);
   background: radial-gradient(
     circle,
     rgba(139, 140, 96, 1) 0%,
     rgba(228, 186, 180, 1) 47%,
     rgba(183, 203, 203, 1) 100%
-  ); */
+  );
   background-size: cover;
   height: 40vh;
   width: 175vh;
@@ -52,7 +52,7 @@ body {
 
 .quote-section .quote-section-text {
   color: #424340;
-  background-color: #e4bab4;
+  /* background-color: #e4bab4; */
   /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
