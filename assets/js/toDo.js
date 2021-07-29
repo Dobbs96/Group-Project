@@ -28,6 +28,32 @@ toDoListItems.on("submit", handleFormSubmit);
 
 // Autocomplete widget
 $(function () {
+<<<<<<< HEAD
+    var ListItems = [
+      'Read',
+      'Take a walk',
+      'Listen to music',
+      'Take a break',
+      'Yoga',
+      'Play',
+      'Eat',
+      'Read a book',
+      'Take a shower',
+      'Stand out under the sun',
+    ];
+    $('#toDo').autocomplete({
+      source: ListItems,
+    });
+  });
+
+  nameInput.keyup(function(event){
+      var code = event.which;
+      if(code == 13) {
+          event.preventDefault();
+          toDoListEl.append('<li class="list-group-item' +event.target.value+ '</li>')
+      } 
+  }) 
+=======
   var ListItems = [
     "Read",
     "Take a walk",
@@ -45,3 +71,4 @@ $(function () {
     source: ListItems,
   });
 });
+>>>>>>> main
