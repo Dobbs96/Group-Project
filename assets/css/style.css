@@ -24,6 +24,7 @@ body {
   justify-content: center;
   height: 40vh;
 }
+
 .quote-section {
   /* background-image: url("./lake-6476212.jpg"); */
   background: rgb(139, 140, 96);
@@ -56,36 +57,49 @@ body {
   /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
-.weather-container {
+.hobby-weather-container {
   display: flex;
-  height: 15vh;
-  justify-content: center;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 100px;
 }
 
+.hobby-section {
+  background-color: #e4bab4;
+  background-size: cover;
+  border-radius: 15px;
+  border: 5px solid #424340;
+  padding: 1.3rem;
+  width: 45%;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+}
+h1#date {
+  margin: 0 0 15px 0;
+}
+h5#hobby {
+  font-size: 1.5rem;
+  margin: 0;
+}
 .weather-section {
   background-color: #e4bab4;
   background-size: cover;
   border-radius: 15px;
   border: 5px solid #424340;
-  margin-top: 100px;
-  margin-bottom: 5px;
-  width: 100vh;
-  height: 15vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  padding: 1.3rem;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
 }
-
-.weather-section .weather-section-text {
-  color: #424340;
-  /* text-shadow: 1px 1px 2px #0a0a0a; */
+.icon-temp {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+p#city-name {
+  font-size: 3rem;
+  margin: 12px 0 0 0;
 }
 
 .todo-container {
