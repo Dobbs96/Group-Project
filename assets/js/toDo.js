@@ -2,17 +2,10 @@ var toDoListItems = $('#skills-form');
 var nameInput = $('#toDo')
 var toDoListEl = $('#toDoList');
 
-// function handleFormSubmit(event) {
-//     event.preventDefault();
-// }
 
-// toDoListItems.on ('click', handleFormSubmit)
-
-
-
-var printSkills = function (name) {
+var printSkills = function (nameInput) {
     var listEl = $('<li>');
-    var listDetail = name;
+    var listDetail = nameInput.val();
     listEl.addClass('list-group-item').text(listDetail);
     listEl.appendTo(toDoListEl);
   };
@@ -34,24 +27,6 @@ var printSkills = function (name) {
 
 toDoListItems.on('submit', handleFormSubmit);
 
-
-
-//   var handleFormSubmit = function (event) {
-//     event.preventDefault();
-  
-//     var toDoInput = toDoInputEl.val();
-    
-  
-    // if (!toDoInput) {
-    //   console.log('You need to fill out the form!');
-    //   return;
-    // }
-  
-    // printSkills(toDoInput);
-  
-    // toDoInputEl.val('');
-  
-//   toDoListItems.on('submit', handleFormSubmit);
 
 
 // Autocomplete widget
