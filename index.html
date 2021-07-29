@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Best of Me</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <!-- <link rel="stylesheet" href="htt/resources/demos/style.css"> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="quote-section">
-      <div class="quote-section-text">
-        <h1 id="quote"></h1>
-        <h5 id="quote-author"></h5>
-
+    <div class="quote-container">
+      <div class="quote-section">
+        <div class="quote-section-text">
+          <h1 id="quote"></h1>
+          <h5 id="quote-author"></h5>
+        </div>
       </div>
-     </div>
+      </div>
     <div class="weather-container">
       <div class="weather-section">
         <div class="weather-section-text">
@@ -53,28 +53,27 @@
       crossorigin="anonymous"
     ></script>
   
-  
-
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
   <style>
     #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
     #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
     #sortable li span { position: absolute; margin-left: -1.3em; }
-    </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
     $( function() {
       $( "#toDoList").sortable();
       $( "#toDoList").disableSelection();
     } );
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./assets/js/toDo.js"></script>
-<script src="assets/js/getQuote.js"></script>
-<script src="assets/js/script.js"></script>
+  </script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="./assets/js/toDo.js"></script>
+  <script src="assets/js/getQuote.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
