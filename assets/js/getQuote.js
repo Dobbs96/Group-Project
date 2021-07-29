@@ -13,12 +13,26 @@ function getQuote() {
         quotesAuthor.text("");
       } else {
         quotesAuthor.text(`"${data[randomArr].author}"`);
-        console.log(data);
-        console.log(randomArr);
+        // console.log(data);
+        // console.log(randomArr);
       }
     });
 }
 
 getQuote();
+setTime();
 
+var seconds = 8;
+function setTime() {
+  var timerInterval = setInterval(function () {
+    seconds--;
+    // console.log(seconds);
 
+    if (seconds === 0) {
+      clearInterval(timerInterval);
+      seconds = 8;
+      getQuote();
+      setTime();
+    }
+  }, 1000);
+}

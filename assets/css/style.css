@@ -6,13 +6,34 @@ body {
   background-color: #e4d8cf;
 }
 
+.header-container {
+  /* display: flex; */
+  border: 5px solid red;
+  /* max-height: 900px;
+  max-width: auto;
+  overflow: hidden;
+  background-image: url(lake-6476212.jpg); */
+  background-color: #e4bab4;
+  color: #424340;
+  border: 5px solid #424340;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 .quote-container {
   display: flex;
   justify-content: center;
   height: 40vh;
 }
+
 .quote-section {
-  background-color: #e4bab4;
+  /* background-image: url("./lake-6476212.jpg"); */
+  background: rgb(139, 140, 96);
+  background: radial-gradient(
+    circle,
+    rgba(139, 140, 96, 1) 0%,
+    rgba(228, 186, 180, 1) 47%,
+    rgba(183, 203, 203, 1) 100%
+  );
   background-size: cover;
   height: 40vh;
   width: 175vh;
@@ -32,39 +53,53 @@ body {
 
 .quote-section .quote-section-text {
   color: #424340;
+  /* background-color: #e4bab4; */
   /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
-.weather-container {
+.hobby-weather-container {
   display: flex;
-  height: 15vh;
-  justify-content: center;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 100px;
 }
 
+.hobby-section {
+  background-color: #e4bab4;
+  background-size: cover;
+  border-radius: 15px;
+  border: 5px solid #424340;
+  padding: 1.3rem;
+  width: 45%;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+}
+h1#date {
+  margin: 0 0 15px 0;
+}
+h5#hobby {
+  font-size: 1.5rem;
+  margin: 0;
+}
 .weather-section {
   background-color: #e4bab4;
   background-size: cover;
   border-radius: 15px;
   border: 5px solid #424340;
-  margin-top: 100px;
-  margin-bottom: 5px;
-  width: 100vh;
-  height: 15vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  padding: 1.3rem;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
 }
-
-.weather-section .weather-section-text {
-  color: #424340;
-  /* text-shadow: 1px 1px 2px #0a0a0a; */
+.icon-temp {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+p#city-name {
+  font-size: 3rem;
+  margin: 12px 0 0 0;
 }
 
 .todo-container {
@@ -78,18 +113,86 @@ body {
   background-size: cover;
   border: 5px solid #424340;
   border-radius: 15px;
-  height: 75vh;
+  height: 40vh;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 200px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
+  /* -webkit-align-items: center; */
   -ms-flex-align: center;
-  align-items: center;
+  /* align-items: center; */
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 50px;
+}
+
+/* To Do list Content */
+
+.listItems {
+  font-size: 30px;
+  font-weight: 600;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.btn-info {
+  height: 25px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.btn-info:hover {
+  color: rgb(63, 68, 66);
+  box-shadow: 3px 3px 12px;
+}
+
+.form-list.ui-autocomplete-input {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: rgb(255, 249, 241);
+  color: #271c58;
+  margin: 30px 30px 30px 30px;
+  font-size: 30px;
+}
+
+.form-list.ui-autocomplete-input:hover {
+  color: rgb(63, 68, 66);
+  box-shadow: 3px 3px 12px;
+}
+
+.displayList {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0px;
+  margin: 30px;
+}
+
+.list-group-item {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid lightblue; */
+  border-radius: 20px;
+  margin: 20px;
+  border: 1px solid lemonchiffon;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px;
+}
+
+.list-group-item:hover {
+  color: rgb(63, 68, 66);
+  box-shadow: 3px 3px 12px;
 }
