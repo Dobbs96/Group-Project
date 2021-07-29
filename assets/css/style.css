@@ -140,20 +140,21 @@ p#city-name {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
-  font-family: fantasy;
+  font-family: sans-serif;
   margin: 5px;
   padding: 5px;
   display: flex;
   justify-content: center;
 }
-.toDoContentText {
+/* .toDoContentText {
   border: 3px solid black;
-  background-color: #eb381d;
+  background-color: #8f7571;
   border-radius: 30px;
+  flex-direction: row;
 
-}
+} */
 
 .listItems {
   font-size: 30px;
@@ -161,7 +162,7 @@ h2 {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-.btn-info {
+/* .btn-info {
   height: 25px;
   width: 75px;
   display: flex;
@@ -171,12 +172,12 @@ h2 {
   outline: none;
   border-radius: 30px;
   font-size: 20px;
-}
+} */
 
-.btn-info:hover {
+/* .btn-info:hover {
   color: rgb(63, 68, 66);
   box-shadow: 3px 3px 12px;
-}
+} */
 
 .form-group .row {
   display: flex;
@@ -186,14 +187,19 @@ h2 {
   padding: 100px;
 }
 
+/* div {
+  border: 1px solid red;
+} */
+
 .form-list.ui-autocomplete-input {
   border: none;
   outline: none;
   border-radius: 50px;
   background-color: rgb(255, 249, 241);
   color: #271c58;
-  margin: 30px 30px 30px 30px;
-  font-size: 30px;
+  margin: auto;
+  font-size: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;

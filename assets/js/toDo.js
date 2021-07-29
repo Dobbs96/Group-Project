@@ -47,3 +47,11 @@ $(function () {
       source: ListItems,
     });
   });
+
+  nameInput.keyup(function(event){
+      var code = event.which;
+      if(code == 13) {
+          event.preventDefault();
+          toDoListEl.append('<li class="list-group-item' +event.target.value+ '</li>')
+      } 
+  }) 
