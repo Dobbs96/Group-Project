@@ -27,25 +27,29 @@
       </div>
     </div>
 
-    <div class="todo-container">
-      <div class="todo-content">
-        <div class="todoContentText">
+<section>
+    <div class="container">
+      <h2 class="top">TO DO</h2>
+        <div class="toDoContentText">
           <form id="skills-form">
             <div class="form-group row">
-              <label for="list" class="listItems">To Do List:
+              <label for="list" class="listItems">
               </label>
                 <input type="text" class="form-list" id="toDo">
+                <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button>
               </div>
-            </div>
-            <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button>
+            <div>
+            <!-- <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button> -->
           </form>
           <div>
-          <h4 class="displayList">List:</h4>
+          <h4 class="displayList"></h4>
           </div>
           <ul class="list-items" id="toDoList"></ul>
-        <div>
       </div>
-    </div>
+      </div>
+  </div>
+</section>
+  
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
