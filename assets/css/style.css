@@ -6,6 +6,19 @@ body {
   background-color: #e4d8cf;
 }
 
+.header-container {
+  /* display: flex; */
+  border: 5px solid red;
+  /* max-height: 900px;
+  max-width: auto;
+  overflow: hidden;
+  background-image: url(lake-6476212.jpg); */
+  background-color: #e4bab4;
+  color: #424340;
+  border: 5px solid #424340;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 .quote-container {
   display: flex;
   justify-content: center;
