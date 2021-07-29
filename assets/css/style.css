@@ -26,6 +26,7 @@ body {
 }
 
 .quote-section {
+  /* background-image: url("./lake-6476212.jpg"); */
   background: rgb(139, 140, 96);
   background: radial-gradient(
     circle,
@@ -52,6 +53,7 @@ body {
 
 .quote-section .quote-section-text {
   color: #424340;
+  /* background-color: #e4bab4; */
   /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
