@@ -81,6 +81,9 @@ h1#date {
 h5#hobby {
   font-size: 1.5rem;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9rem;
 }
 .weather-section {
   background-color: #ffffff;
