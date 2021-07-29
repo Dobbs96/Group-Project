@@ -39,6 +39,7 @@ $(function () {
       'Yoga',
       'Play',
       'Eat',
+      'Breathe'
       'Read a book',
       'Take a shower',
       'Stand out under the sun',
