@@ -6,19 +6,71 @@ $("#date").text(todayDate);
 
 var apiKey = "eb2134244e7565b6b1125ba38666226f";
 var cityName = "New York";
+var lat = 40.7143;
+var lon = -74.006;
 var baseURL =
   "https://api.openweathermap.org/data/2.5/weather?q=" +
-  cityName +
+  // cityName +
+  "&lat=" +
+  lat +
+  "&lon=" +
+  lon +
   "&units=imperial&cnt=1&appid=" +
   apiKey;
 
-fetch(baseURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-  });
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+function success(pos) {
+  var crd = pos.coords;
+  const lat = crd.latitude;
+  const lon = crd.longitude;
+  fetch(
+    `https://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${lon}&units=imperial&cnt=1&appid=eb2134244e7565b6b1125ba38666226f`
+  )
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      // console.log(data);
+      var iconImg = data.list[0].weather[0].icon;
+      var icon = document.getElementById("icon");
+      var temperature = Math.floor(data.list[0].main.temp);
+      var temp = $("#temp");
+      var cityName = data.list[0].name;
+      var city = $("#city-name");
+
+      icon.src = `./assets/Images/${iconImg}.png`;
+      icon.alt = icon + "icon";
+      temp.text(`${temperature}°F`);
+      city.text(cityName);
+    });
+}
+
+function getFetch() {
+  fetch(baseURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var iconImg = data.weather[0].icon;
+      var icon = document.getElementById("icon");
+      var temperature = Math.floor(data.main.temp);
+      var temp = $("#temp");
+      var cityName = data.name;
+      var city = $("#city-name");
+
+      icon.src = `./assets/Images/${iconImg}.png`;
+      icon.alt = icon + "icon";
+      temp.text(`${temperature}°F`);
+      city.text(cityName);
+    });
+}
+
+navigator.geolocation.getCurrentPosition(success, getFetch, options);
 
 // -----------------James-------------------------
 

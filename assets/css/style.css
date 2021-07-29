@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #e4d8cf;
+  background-color: #bdc9c8;
 }
 
 .header-container {
@@ -83,13 +83,16 @@ h5#hobby {
   margin: 0;
 }
 .weather-section {
-  background-color: #e4bab4;
+  background-color: #ffffff;
   background-size: cover;
   border-radius: 15px;
   border: 5px solid #424340;
   padding: 1.3rem;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+}
+img#icon {
+  width: 4rem;
 }
 .icon-temp {
   display: flex;
@@ -113,22 +116,22 @@ p#city-name {
   background-size: cover;
   border: 5px solid #424340;
   /* border-radius: 39px; */
-  /* height: 40vh; */
-  /* width: 100%; */
-  /* text-align: center; */
-  /* margin-top: 200px;
+/* height: 40vh; */
+/* width: 100%; */
+/* text-align: center; */
+/* margin-top: 200px;
   display: -webkit-flex;
   display: -ms-flexbox; */
-  /* display: flex; */
-  /* -webkit-align-items: center; */
-  /* -ms-flex-align: center; */
-  /* align-items: center; */
-  /* -webkit-justify-content: center; */
-  /* -ms-flex-pack: center; */
-  /* justify-content: center; */
-  /* border-radius: 35px; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
+/* display: flex; */
+/* -webkit-align-items: center; */
+/* -ms-flex-align: center; */
+/* align-items: center; */
+/* -webkit-justify-content: center; */
+/* -ms-flex-pack: center; */
+/* justify-content: center; */
+/* border-radius: 35px; */
+/* flex-wrap: wrap; */
+/* flex-direction: column; */
 /* }  */
 
 /* To Do list Content */
