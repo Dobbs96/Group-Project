@@ -98,5 +98,6 @@ getHobby[19] = "Do 20 jumping jacks";
 
 var randomHobby = Math.floor(Math.random() * getHobby.length);
 
-document.getElementById("hobby").innerHTML = `Try this: 
-${getHobby[randomHobby]}`;
+
+document.getElementById("hobby").innerHTML = `Try this: ${getHobby[randomHobby]}`;
+
