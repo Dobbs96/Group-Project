@@ -143,8 +143,9 @@ p#city-name {
   border: 5px solid black;
   border-radius: 30px;
   margin-top: 200px;
-  height: 80vh;
+  height: 50vh;
   background-color: #e4bab4;
+  overflow: auto;
 }
 
 h2 {
@@ -198,6 +199,7 @@ h2 {
 /* div {
   border: 1px solid red;
 } */
+
 
 .form-list.ui-autocomplete-input {
   border: none;
