@@ -6,6 +6,20 @@ body {
   background-color: #bdc9c8;
 }
 
+h1 {
+  background: #ccc6;
+  width: 50%;
+  text-align: center;
+  margin-left: 71px;
+}
+
+p {
+  background: #ccc6;
+  width: 100%;
+  text-align: center;
+  margin-left: 71px;
+}
+
 .header-container {
   display: flex;
   /* border: 5px solid red; */
@@ -21,6 +35,7 @@ body {
   color: rgb(255, 255, 255);
   border: 5px solid #424340;
   border-radius: 15px;
+  margin: 0;
   margin-bottom: 20px;
 }
 
