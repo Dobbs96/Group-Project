@@ -1,49 +1,72 @@
-var toDoListItems = $("#skills-form");
-var nameInput = $("#toDo");
-var toDoListEl = $("#toDoList");
+var todoForm = document.querySelector("#skills-form");
+var nameInput = document.querySelector("#toDo");
+var todoListE1 = document.querySelector("#toDoList");
 
-var printSkills = function (nameInput) {
-  var listDetail = nameInput.val();
-  var listEl = $("<li>");
-  var removeBtn = $("<button>");
-  var checkListBtn = $("<input>");
-  // var targetLi = $(".list-group-item")
+var todos = [];
 
-  // build
-  listEl.addClass("list-group-item").text(listDetail);
-  removeBtn.addClass("delete is-large");
-  removeBtn.attr("type", "button");
-  checkListBtn.addClass("check-list");
-  checkListBtn.attr("type", "checkbox");
+function init() {
+  var storedTodos = JSON.parse(localStorage.getItem("todos"));
 
-  // place
-  listEl.appendTo(toDoListEl);
-  removeBtn.appendTo(listEl);
-  checkListBtn.prependTo(listEl);
+  if (storedTodos !== null) {
+    todos = storedTodos;
+  }
 
-  checkListBtn.on("click", function (event) {
-    event.stopPropagation();
-  });
-};
+  renderTodos();
+}
 
-// remove btn event listner
+function renderTodos() {
+  todoListE1.innerHTML = "";
 
-var handleFormSubmit = function (event) {
+  for (var i = 0; i < todos.length; i++) {
+    var todo = todos[i];
+
+    var listEl = document.createElement("li");
+    listEl.textContent = todo;
+    listEl.setAttribute("data-index", i);
+    listEl.setAttribute("class", "list-group-item");
+
+    var removeBtn = document.createElement("button");
+    removeBtn.setAttribute("class", "delete is-large");
+    removeBtn.setAttribute("type", "button");
+
+    listEl.appendChild(removeBtn);
+    todoListE1.appendChild(listEl);
+  }
+}
+
+todoForm.addEventListener("click", function (event) {
   event.preventDefault();
 
-  var input = nameInput.val();
+  var todoText = nameInput.value.trim();
 
-  if (!input) {
-    // console.log("You need to fill out the form!");
+  if (todoText === "") {
     return;
   }
 
-  printSkills(nameInput);
+  todos.push(todoText);
+  nameInput.value = "";
 
-  nameInput.val("");
-};
+  storeTodos();
+  renderTodos();
+});
 
-toDoListItems.on("submit", handleFormSubmit);
+todoListE1.addEventListener("click", function (event) {
+  var element = event.target;
+
+  if (element.matches("button") === true) {
+    var index = element.parentElement.getAttribute("data-index");
+    todos.splice(index, 1);
+
+    storeTodos();
+    renderTodos();
+  }
+});
+
+function storeTodos() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+init();
 
 // Autocomplete widget
 $(function () {
@@ -62,11 +85,4 @@ $(function () {
   $("#toDo").autocomplete({
     source: ListItems,
   });
-});
-
-nameInput.keyup(function (event) {
-  var code = event.which;
-  if (code == 13) {
-    event.preventDefault();
-  }
 });
