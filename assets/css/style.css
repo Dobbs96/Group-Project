@@ -10,7 +10,7 @@ p {
   background: #ccc6;
   width: 100%;
   text-align: center;
-  margin-left: 71px;
+  /* margin-left: 71px; */
 }
 
 .header-container {
@@ -46,7 +46,7 @@ h3 {
   background: #ccc6;
   width: 50%;
   text-align: center;
-  margin-left: 71px;
+  /* margin-left: 71px; */
 }
 
 .quote-container {
@@ -58,10 +58,11 @@ h3 {
 .quote-section {
   /* background-image: url("./lake-6476212.jpg"); */
   background: rgb(139, 140, 96);
+  background: rgb(210, 210, 195);
   background: radial-gradient(
     circle,
-    rgba(139, 140, 96, 1) 0%,
-    rgba(228, 186, 180, 1) 47%,
+    rgba(210, 210, 195, 1) 0%,
+    rgba(126, 197, 239, 1) 47%,
     rgba(183, 203, 203, 1) 100%
   );
   background-size: cover;
