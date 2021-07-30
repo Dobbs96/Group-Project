@@ -310,3 +310,7 @@ input.check-list:hover {
 button.delete.is-large {
   align-self: center;
 }
+
+.submit-form {
+  display: flex;
+}
