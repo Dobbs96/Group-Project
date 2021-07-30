@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #bdc9c8;
+  background-color: #7ec5ef9e;
 }
 
 p {
@@ -30,6 +30,15 @@ p {
   border-radius: 15px;
   margin: 0;
   margin-bottom: 20px;
+}
+h1#quote {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 1rem;
+}
+h5#quote-author {
+  font-size: 1.1rem;
+  color: #3c3c3c;
 }
 
 h3 {
@@ -97,6 +106,8 @@ h3 {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
 }
 h1#date {
+  font-size: 2rem;
+  font-weight: 600;
   margin: 0 0 15px 0;
 }
 h5#hobby {
@@ -287,6 +298,13 @@ h2 {
 
 input.check-list {
   align-self: center;
+  height: 20px;
+  width: 20px;
+}
+
+input.check-list:hover {
+  color: rgb(158, 158, 158);
+  box-shadow: 1px 1px 12px;
 }
 
 button.delete.is-large {
