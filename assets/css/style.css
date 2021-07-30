@@ -96,7 +96,7 @@ h3 {
 }
 
 .hobby-section {
-  background-color: #e4bab4;
+  background-color: #d2d2c3;
   background-size: cover;
   border-radius: 15px;
   border: 5px solid #424340;
@@ -177,7 +177,7 @@ p#city-name {
   border-radius: 30px;
   margin-top: 200px;
   height: 50vh;
-  background-color: #e4bab4;
+  background-color: #d2d2c3;
   overflow: auto;
 }
 
