@@ -7,29 +7,26 @@ var printSkills = function (nameInput) {
   var listEl = $("<li>");
   var removeBtn = $("<button>");
   var checkListBtn = $("<input>");
-  // var targetLi = $(".list-group-item") 
+  // var targetLi = $(".list-group-item")
 
   // build
   listEl.addClass("list-group-item").text(listDetail);
   removeBtn.addClass("delete is-large");
-  checkListBtn.addClass("check-list")
-  checkListBtn.attr('type', 'checkbox') 
+  removeBtn.attr("type", "button");
+  checkListBtn.addClass("check-list");
+  checkListBtn.attr("type", "checkbox");
 
-  
   // place
   listEl.appendTo(toDoListEl);
   removeBtn.appendTo(listEl);
   checkListBtn.prependTo(listEl);
 
-
-  checkListBtn.on('click', function(event) {
+  checkListBtn.on("click", function (event) {
     event.stopPropagation();
-    console.log(event.target)
-  })
+  });
 };
 
 // remove btn event listner
-
 
 var handleFormSubmit = function (event) {
   event.preventDefault();
@@ -37,7 +34,7 @@ var handleFormSubmit = function (event) {
   var input = nameInput.val();
 
   if (!input) {
-    console.log("You need to fill out the form!");
+    // console.log("You need to fill out the form!");
     return;
   }
 
@@ -73,4 +70,3 @@ nameInput.keyup(function (event) {
     event.preventDefault();
   }
 });
-
