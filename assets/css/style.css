@@ -31,6 +31,15 @@ p {
   margin: 0;
   margin-bottom: 20px;
 }
+h1#quote {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 1rem;
+}
+h5#quote-author {
+  font-size: 1.1rem;
+  color: #3c3c3c;
+}
 
 h3 {
   font-size: 40px;
@@ -97,6 +106,8 @@ h3 {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
 }
 h1#date {
+  font-size: 2rem;
+  font-weight: 600;
   margin: 0 0 15px 0;
 }
 h5#hobby {
