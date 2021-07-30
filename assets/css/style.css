@@ -298,6 +298,13 @@ h2 {
 
 input.check-list {
   align-self: center;
+  height: 20px;
+  width: 20px;
+}
+
+input.check-list:hover {
+  color: rgb(158, 158, 158);
+  box-shadow: 1px 1px 12px;
 }
 
 button.delete.is-large {
