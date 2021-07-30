@@ -97,4 +97,4 @@ getHobby[18] = "Do 20 squats";
 
 var randomHobby = Math.floor(Math.random() * getHobby.length);
 
-document.getElementById("hobby").innerHTML = getHobby[randomHobby];
+document.getElementById("hobby").innerHTML = `'${getHobby[randomHobby]}!'`;
