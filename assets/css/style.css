@@ -314,3 +314,10 @@ button.button.is-info {
   margin: auto 1rem;
   flex: 1;
 }
+
+.main-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
