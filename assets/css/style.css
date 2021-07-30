@@ -6,13 +6,6 @@ body {
   background-color: #bdc9c8;
 }
 
-h1 {
-  background: #ccc6;
-  width: 50%;
-  text-align: center;
-  margin-left: 71px;
-}
-
 p {
   background: #ccc6;
   width: 100%;
@@ -32,11 +25,19 @@ p {
   font-size: 20px;
   background-image: url(../Images/lake-6476212.jpg);
   /* background-color: #e4bab4; */
-  color: rgb(255, 255, 255);
+  color: #424340;
   border: 5px solid #424340;
   border-radius: 15px;
   margin: 0;
   margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 40px;
+  background: #ccc6;
+  width: 50%;
+  text-align: center;
+  margin-left: 71px;
 }
 
 .quote-container {
