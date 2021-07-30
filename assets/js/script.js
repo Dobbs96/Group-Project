@@ -80,7 +80,7 @@ getHobby[0] = "Take a breathing class";
 getHobby[1] = "Explore Improv";
 getHobby[2] = "Cook a new dish";
 getHobby[3] = "Learn 5 new words";
-getHobby[4] = "Try to Paint";
+getHobby[4] = "Paint one thing you see";
 getHobby[6] = "Create a vision-board";
 getHobby[7] = "Introduce yourself to two neighbors";
 getHobby[8] = "Learn about two new bug species";
@@ -91,10 +91,13 @@ getHobby[12] = "Learn Photography";
 getHobby[13] = "Try Pottery";
 getHobby[14] = "Try a sport";
 getHobby[15] = "Write a book";
-getHobby[16] = "Exercise";
+getHobby[16] = "Exercise for 15 minutes";
 getHobby[17] = "Write down 5 things you are grateful for";
 getHobby[18] = "Do 20 squats";
+getHobby[19] = "Do 20 jumping jacks";
 
 var randomHobby = Math.floor(Math.random() * getHobby.length);
 
-document.getElementById("hobby").innerHTML = `'${getHobby[randomHobby]}!'`;
+
+document.getElementById("hobby").innerHTML = `Try this: ${getHobby[randomHobby]}`;
+
