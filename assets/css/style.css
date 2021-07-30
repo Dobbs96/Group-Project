@@ -245,7 +245,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 50%;
+  width: 75%;
   justify-content: space-between;
 }
 
@@ -310,4 +310,18 @@ input.check-list:hover {
 
 button.delete.is-large {
   align-self: center;
+}
+
+.submit-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.button.is-info {
+  display: flex;
+  text-align: center;
+  height: 50px;
+  border-radius: 30px;
+  width: 65px;
+  margin: 10px;
 }
