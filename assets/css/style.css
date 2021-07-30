@@ -7,18 +7,23 @@ body {
 }
 
 .header-container {
-  /* display: flex; */
-  border: 5px solid red;
-  /* max-height: 900px;
+  display: flex;
+  /* border: 5px solid red; */
+  /* max-height: 900px; */
+  height: 900px;
   max-width: auto;
   overflow: hidden;
-  background-image: url(lake-6476212.jpg); */
-  background-color: #e4bab4;
-  color: #424340;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-image: url(../Images/lake-6476212.jpg);
+  /* background-color: #e4bab4; */
+  color: rgb(255, 255, 255);
   border: 5px solid #424340;
   border-radius: 15px;
   margin-bottom: 20px;
 }
+
 .quote-container {
   display: flex;
   justify-content: center;
@@ -199,7 +204,6 @@ h2 {
 /* div {
   border: 1px solid red;
 } */
-
 
 .form-list.ui-autocomplete-input {
   border: none;
