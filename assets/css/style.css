@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #e4d8cf;
+  background-color: #bdc9c8;
 }
 
 .header-container {
@@ -81,15 +81,21 @@ h1#date {
 h5#hobby {
   font-size: 1.5rem;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9rem;
 }
 .weather-section {
-  background-color: #e4bab4;
+  background-color: #ffffff;
   background-size: cover;
   border-radius: 15px;
   border: 5px solid #424340;
   padding: 1.3rem;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+}
+img#icon {
+  width: 4rem;
 }
 .icon-temp {
   display: flex;
@@ -102,34 +108,62 @@ p#city-name {
   margin: 12px 0 0 0;
 }
 
-.todo-container {
+/* .todo-content {
   display: flex;
   height: 75vh;
   justify-content: center;
-}
+} */
 
-.todo-content {
+/* .todo-content {
   background-color: #e4bab4;
   background-size: cover;
   border: 5px solid #424340;
-  border-radius: 15px;
-  height: 40vh;
-  width: 100%;
-  /* text-align: center; */
-  margin-top: 200px;
+  /* border-radius: 39px; */
+/* height: 40vh; */
+/* width: 100%; */
+/* text-align: center; */
+/* margin-top: 200px;
   display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /* -webkit-align-items: center; */
-  -ms-flex-align: center;
-  /* align-items: center; */
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  /* justify-content: center; */
-  border-radius: 50px;
-}
+  display: -ms-flexbox; */
+/* display: flex; */
+/* -webkit-align-items: center; */
+/* -ms-flex-align: center; */
+/* align-items: center; */
+/* -webkit-justify-content: center; */
+/* -ms-flex-pack: center; */
+/* justify-content: center; */
+/* border-radius: 35px; */
+/* flex-wrap: wrap; */
+/* flex-direction: column; */
+/* }  */
 
 /* To Do list Content */
+
+.container {
+  border: 5px solid black;
+  border-radius: 30px;
+  margin-top: 200px;
+  height: 50vh;
+  background-color: #e4bab4;
+  overflow: auto;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+/* .toDoContentText {
+  border: 3px solid black;
+  background-color: #8f7571;
+  border-radius: 30px;
+  flex-direction: row;
+
+} */
 
 .listItems {
   font-size: 30px;
@@ -137,7 +171,7 @@ p#city-name {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-.btn-info {
+/* .btn-info {
   height: 25px;
   width: 75px;
   display: flex;
@@ -147,12 +181,25 @@ p#city-name {
   outline: none;
   border-radius: 30px;
   font-size: 20px;
-}
+} */
 
-.btn-info:hover {
+/* .btn-info:hover {
   color: rgb(63, 68, 66);
   box-shadow: 3px 3px 12px;
+} */
+
+.form-group .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 100px;
 }
+
+/* div {
+  border: 1px solid red;
+} */
+
 
 .form-list.ui-autocomplete-input {
   border: none;
@@ -160,8 +207,14 @@ p#city-name {
   border-radius: 50px;
   background-color: rgb(255, 249, 241);
   color: #271c58;
-  margin: 30px 30px 30px 30px;
-  font-size: 30px;
+  margin: auto;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 50%;
+  justify-content: space-between;
 }
 
 .form-list.ui-autocomplete-input:hover {
@@ -186,6 +239,13 @@ p#city-name {
   border-radius: 20px;
   margin: 20px;
   border: 1px solid lemonchiffon;
+  background: rgb(139, 140, 96);
+  background: radial-gradient(
+    circle,
+    rgba(139, 140, 96, 1) 0%,
+    rgba(228, 186, 180, 1) 47%,
+    rgba(183, 203, 203, 1) 100%
+  );
   display: flex;
   justify-content: center;
   padding: 8px;

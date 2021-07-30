@@ -27,30 +27,34 @@
           <h5 id="hobby">Random Hobby</h5>
       </div>
       <div class="weather-section">
-        <div class="icon-temp"><span id="icon">@</span><span id="temp">77&#8457</span></div>
+        <div class="icon-temp"><img src="./assets/Images/03d.png" alt="icon" id="icon"></img><span id="temp">77&#8457</span></div>
         <div class="city"><p id="city-name">New York</p></div>
       </div>
     </div>
 
-    <div class="todo-container">
-      <div class="todo-content">
-        <div class="todoContentText">
+<section>
+    <div class="container">
+      <h2 class="top">TO DO</h2>
+        <div class="toDoContentText">
           <form id="skills-form">
             <div class="form-group row">
-              <label for="list" class="listItems">To Do List:
+              <label for="list" class="listItems">
               </label>
-                <input type="text" class="form-list" id="toDo">
+                <input type="text" class="form-list" id="toDo" placeholder="What would you like to do today?">
+                <!-- <button type="submit" value="Submit" id="submitToDo" class="btn-info"></button> -->
               </div>
-            </div>
-            <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button>
+            <div>
+            <!-- <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button> -->
           </form>
           <div>
-          <h4 class="displayList">List:</h4>
+          <h4 class="displayList"></h4>
           </div>
           <ul class="list-items" id="toDoList"></ul>
-        <div>
       </div>
-    </div>
+      </div>
+  </div>
+</section>
+  
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
