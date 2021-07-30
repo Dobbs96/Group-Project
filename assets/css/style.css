@@ -250,9 +250,25 @@ h2 {
   justify-content: center;
   padding: 8px;
   margin: 10px;
+  justify-content: space-between;
 }
 
 .list-group-item:hover {
   color: rgb(63, 68, 66);
   box-shadow: 3px 3px 12px;
+}
+
+/* .delete {
+  margin: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+} */
+
+input.check-list {
+  align-self: center;
+}
+
+button.delete.is-large {
+  align-self: center;
 }
