@@ -35,6 +35,8 @@ getHobby[8] = "Learn about two new bug species";
 getHobby[9] = "Plan a camping trip";
 getHobby[10] = "Find a community on Reddit";
 getHobby[11] = "Learn a new swim technique";
+getHobby[12] = "Write down 5 things you are grateful for";
+getHobby[13] = "Do 20 squats";
 
 document.getElementById("hobby").innerHTML = "#hobby";
 var randomHobby = Math.floor(Math.random() * getHobby.length);
