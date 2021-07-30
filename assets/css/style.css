@@ -15,22 +15,21 @@ p {
 
 .header-container {
   display: flex;
-  /* border: 5px solid red; */
-  /* max-height: 900px; */
   height: 900px;
   max-width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   background-image: url(../Images/lake-6476212.jpg);
-  /* background-color: #e4bab4; */
   overflow: hidden;
   color: #424340;
   border: 5px solid #424340;
-  border-radius: 15px;
-  /* margin: 0; */
-  margin-bottom: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  width: 95%;
+  margin: 0 auto 30px auto;
 }
+
 h1#quote {
   font-size: 2rem;
   font-weight: 700;
@@ -56,8 +55,6 @@ h3 {
 }
 
 .quote-section {
-  /* background-image: url("./lake-6476212.jpg"); */
-  background: rgb(139, 140, 96);
   background: rgb(210, 210, 195);
   background: radial-gradient(
     circle,
@@ -65,21 +62,14 @@ h3 {
     rgba(126, 197, 239, 1) 47%,
     rgba(183, 203, 203, 1) 100%
   );
-  background-size: cover;
-  height: 40vh;
-  width: 175vh;
+  min-height: 40vh;
+  width: 90%;
   border: 5px solid #424340;
   border-radius: 15px;
   text-align: center;
   display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .quote-section .quote-section-text {
@@ -178,6 +168,7 @@ p#city-name {
   margin-top: 200px;
   min-height: 75vh;
   background-color: #d2d2c3;
+  width: 90%;
 }
 
 h2 {
@@ -320,4 +311,15 @@ button.button.is-info {
   color: white;
   text-align: center;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  button.button.is-info {
+    width: 25%;
+    margin: 1rem auto 0 auto;
+  }
 }
