@@ -92,6 +92,8 @@ getHobby[13] = "Try Pottery";
 getHobby[14] = "Try a sport";
 getHobby[15] = "Write a book";
 getHobby[16] = "Exercise";
+getHobby[17] = "Write down 5 things you are grateful for";
+getHobby[18] = "Do 20 squats";
 
 var randomHobby = Math.floor(Math.random() * getHobby.length);
 
