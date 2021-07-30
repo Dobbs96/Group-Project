@@ -314,3 +314,8 @@ button.delete.is-large {
 .submit-form {
   display: flex;
 }
+
+button.button.is-info {
+  display: flex;
+  text-align: center;
+}
