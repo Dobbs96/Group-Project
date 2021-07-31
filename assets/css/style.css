@@ -62,7 +62,6 @@ h3 {
     rgba(126, 197, 239, 1) 47%,
     rgba(183, 203, 203, 1) 100%
   );
-  min-height: 40vh;
   width: 90%;
   border: 5px solid #424340;
   border-radius: 15px;
@@ -84,7 +83,7 @@ h3 {
   display: flex;
   margin: auto;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .hobby-section {
@@ -95,11 +94,15 @@ h3 {
   padding: 1.3rem;
   width: 45%;
   text-align: center;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 6px 5px 15px 5px rgb(0 0 0 / 71%);
+  box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 71%);
+  justify-content: center;
+  align-items: center;
 }
 h1#date {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 600;
   margin: 0 0 15px 0;
 }
@@ -116,6 +119,7 @@ h5#hobby {
   border-radius: 15px;
   border: 5px solid #424340;
   padding: 1.3rem;
+  width: 30%;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
 }
@@ -167,7 +171,7 @@ p#city-name {
 .container {
   border: 5px solid black;
   border-radius: 30px;
-  margin-top: 200px;
+  margin-top: 50px;
   min-height: 75vh;
   background-color: #d2d2c3;
   width: 90%;
@@ -323,5 +327,30 @@ button.button.is-info {
   button.button.is-info {
     width: 25%;
     margin: 1rem auto 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hobby-weather-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .hobby-section {
+    margin-top: 50px;
+    width: 50%;
+  }
+  .weather-section {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hobby-section {
+    width: 75%;
+  }
+  .weather-section {
+    width: 75%;
   }
 }
