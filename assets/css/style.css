@@ -10,7 +10,6 @@ p {
   background: #ccc6;
   width: 100%;
   text-align: center;
-  /* margin-left: 71px; */
 }
 
 .header-container {
@@ -28,6 +27,7 @@ p {
   margin-bottom: 30px;
   width: 95%;
   margin: 0 auto 30px auto;
+  padding: 2rem;
 }
 
 h1#quote {
@@ -43,15 +43,15 @@ h5#quote-author {
 h3 {
   font-size: 40px;
   background: #ccc6;
-  width: 50%;
+  max-width: 30rem;
   text-align: center;
-  /* margin-left: 71px; */
+  margin-bottom: 60px;
 }
 
 .quote-container {
   display: flex;
   justify-content: center;
-  height: 40vh;
+  min-height: 40vh;
 }
 
 .quote-section {
@@ -75,8 +75,6 @@ h3 {
 
 .quote-section .quote-section-text {
   color: #424340;
-  /* background-color: #e4bab4; */
-  /* text-shadow: 1px 1px 2px #0a0a0a; */
 }
 
 .hobby-weather-container {
@@ -137,37 +135,6 @@ p#city-name {
   margin: 12px 0 0 0;
 }
 
-/* .todo-content {
-  display: flex;
-  height: 75vh;
-  justify-content: center;
-} */
-
-/* .todo-content {
-  background-color: #e4bab4;
-  background-size: cover;
-  border: 5px solid #424340;
-  /* border-radius: 39px; */
-/* height: 40vh; */
-/* width: 100%; */
-/* text-align: center; */
-/* margin-top: 200px;
-  display: -webkit-flex;
-  display: -ms-flexbox; */
-/* display: flex; */
-/* -webkit-align-items: center; */
-/* -ms-flex-align: center; */
-/* align-items: center; */
-/* -webkit-justify-content: center; */
-/* -ms-flex-pack: center; */
-/* justify-content: center; */
-/* border-radius: 35px; */
-/* flex-wrap: wrap; */
-/* flex-direction: column; */
-/* }  */
-
-/* To Do list Content */
-
 .container {
   border: 5px solid black;
   border-radius: 30px;
@@ -186,36 +153,11 @@ h2 {
   display: flex;
   justify-content: center;
 }
-/* .toDoContentText {
-  border: 3px solid black;
-  background-color: #8f7571;
-  border-radius: 30px;
-  flex-direction: row;
-
-} */
 
 .listItems {
   font-size: 30px;
   font-weight: 600;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
-
-/* .btn-info {
-  height: 25px;
-  width: 75px;
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-  border: none;
-  outline: none;
-  border-radius: 30px;
-  font-size: 20px;
-} */
-
-/* .btn-info:hover {
-  color: rgb(63, 68, 66);
-  box-shadow: 3px 3px 12px;
-} */
 
 .form-group .row {
   display: flex;
@@ -224,10 +166,6 @@ h2 {
   margin: 100px;
   padding: 100px;
 }
-
-/* div {
-  border: 1px solid red;
-} */
 
 .form-list.ui-autocomplete-input {
   border: none;
@@ -276,13 +214,6 @@ h2 {
   color: rgb(63, 68, 66);
   box-shadow: 3px 3px 12px;
 }
-
-/* .delete {
-  margin: 5px;
-  padding: 0px;
-  display: flex;
-  justify-content: flex-end;
-} */
 
 input.check-list {
   align-self: center;
