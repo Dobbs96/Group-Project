@@ -23,7 +23,7 @@ function renderTodos() {
     var listEl = document.createElement("li");
     listEl.textContent = todo;
     listEl.setAttribute("data-index", i);
-    listEl.setAttribute("class", "list-group-item");
+    listEl.setAttribute("class", "list-group-item ui-state-default");
 
     var removeBtn = document.createElement("button");
     removeBtn.setAttribute("class", "delete is-large");
