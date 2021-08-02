@@ -48,21 +48,17 @@
                 <input type="text" class="form-list" id="toDo" placeholder="What would you like to do today?">
                 <button type="submit" class="button is-info">Submit</button>
               </div>
-                <!-- <button type="submit" value="Submit" id="submitToDo" class="btn-info"></button> -->
-              </div>
-            <div>
-            <!-- <button type="submit" value="Submit" id="submitToDo" class="btn-info">Submit</button> -->
+            </div>
           </form>
           <div>
           <h4 class="displayList"></h4>
           </div>
-          <ul class="list-items" id="toDoList"></ul>
+          <ul class="list-items" id="toDoList" ></ul>
+        </div>
       </div>
-      </div>
-  </div>
 </section>
   
-
+<footer class="main-footer">Copyright &copy 2021 The Best of Me </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -70,9 +66,10 @@
     ></script>
   
   <style>
-    #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-    #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
-    #sortable li span { position: absolute; margin-left: -1.3em; }
+   #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+  html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+  .ui-state-highlight { height: 3em; line-height: 1.2em; margin: 5px 1rem; background-color: rgba(255, 250, 205, 0.705); border-radius: 15px;}
   </style>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -80,7 +77,9 @@
   
   <script>
     $( function() {
-      $( "#toDoList").sortable();
+      $( "#toDoList").sortable({
+      placeholder: "ui-state-highlight"
+    });
       $( "#toDoList").disableSelection();
     } );
   </script>
