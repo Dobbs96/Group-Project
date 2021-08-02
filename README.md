@@ -63,9 +63,9 @@ The critical requirements that were necessary to build a working "The Best of Me
 
 # Deployed application and Github repo link
 
-<a href="https://dobbs96.github.io/Group-Project/" target="_blank">Deployed Application</a>
+<a href="https://dobbs96.github.io/The-Best-of-Me-Project/" target="_blank">Deployed Application</a>
 <br>
-<a href="https://github.com/Dobbs96/Group-Project" target="_blank">Github repository</a>
+<a href="https://github.com/Dobbs96/The-Best-of-Me-Project" target="_blank">Github repository</a>
 </br>
 
 # Credits
